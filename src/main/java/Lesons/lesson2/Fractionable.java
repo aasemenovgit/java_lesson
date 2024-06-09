@@ -1,4 +1,4 @@
-package Lesons.lesson1;
+package Lesons.lesson2;
 
 public interface Fractionable {
     double doubleValue();

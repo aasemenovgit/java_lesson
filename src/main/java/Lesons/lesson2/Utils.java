@@ -1,9 +1,5 @@
-package Lesons.lesson1;
+package Lesons.lesson2;
 
-import org.jetbrains.annotations.NotNull;
-
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 public class Utils  {

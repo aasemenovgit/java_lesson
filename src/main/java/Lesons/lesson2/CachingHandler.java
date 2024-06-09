@@ -1,4 +1,4 @@
-package Lesons.lesson1;
+package Lesons.lesson2;
 
 import org.jetbrains.annotations.NotNull;
 

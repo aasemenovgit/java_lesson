@@ -1,13 +1,9 @@
-package Lesons.lesson1;
+package Lesons.lesson2;
 
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import javax.management.InvalidApplicationException;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class Fraction2 implements Fractionable{
     int num;

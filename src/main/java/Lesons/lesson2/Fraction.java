@@ -1,4 +1,4 @@
-package Lesons.lesson1;
+package Lesons.lesson2;
 
 public class Fraction implements  Fractionable{
     private int num;
