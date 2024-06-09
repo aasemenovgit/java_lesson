@@ -20,30 +20,4 @@ public class Utils  {
 
 
 
-
-    /*
-    * private class Snapshot implements Leadable {
-        private String name;
-        private Map<Currence, Integer> mapVal;
-
-        public Snapshot() {
-            this.name = Account.this.name;
-            this.mapVal = new HashMap<>(Account.this.mapVal);
-        }
-
-        @Override
-        public void load() {
-            Account.this.name = this.name;
-            Account.this.mapVal = new HashMap<>(this.mapVal);
-        }
-
-    }
-
-    public Leadable Save() {
-        return new Snapshot();
-    }
-    *
-    * */
-
-
 }
