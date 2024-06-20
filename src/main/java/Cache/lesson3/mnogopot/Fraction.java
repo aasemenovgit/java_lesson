@@ -19,7 +19,7 @@ public class Fraction implements  Fractionable{
     }
 
     @Override
-    @Cache
+    @Cache(vltime = 1000)
     public double doubleValue() {
         System.out.println("invoke double value");
         return (double) num/denum;
