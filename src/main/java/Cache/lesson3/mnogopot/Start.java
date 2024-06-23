@@ -23,8 +23,12 @@ public class Start {
          fr.setNum(8);
        System.out.println(fr.doubleValue());
         System.out.println(fr.doubleValue());
-         Thread.sleep(4000);
 
+        fr.setDenum(5);
+        System.out.println(fr.doubleValue());
+        System.out.println(fr.doubleValue());
+        Thread.sleep(4000);
+        fr.setDenum(4);
         fr.setNum(8);
         System.out.println(fr.doubleValue());
         System.out.println(fr.doubleValue());
