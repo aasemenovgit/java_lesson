@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ef337018-84b0-4272-b938-9d3703d46380" name="Changes" comment="one commit">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Cache/lesson3/mnogopot/CachingHandlerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/CachingHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/CachingHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/ClearCache.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/Leadable.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/Start.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Cache/lesson3/mnogopot/CachingHandlerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Cache/lesson3/mnogopot/CachingHandlerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +80,7 @@
       <recent name="Cache.lesson3.mnogopot" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Start">
+  <component name="RunManager" selected="JUnit.CachingHandlerTest.TestCount_0L">
     <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Cache.lesson3.mnogopot.Start" />
       <module name="Lesson3" />
@@ -141,11 +135,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CachingHandlerTest.TestCount_0L" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lesson3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Cache.lesson3.mnogopot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Cache.lesson3.mnogopot" />
+      <option name="MAIN_CLASS_NAME" value="Cache.lesson3.mnogopot.CachingHandlerTest" />
+      <option name="METHOD_NAME" value="TestCount_0L" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CachingHandlerTest.TestCount_0L" />
+        <item itemvalue="JUnit.CachingHandlerTest" />
         <item itemvalue="Application.Start" />
         <item itemvalue="JUnit.CachingHandlerTest.TestCount" />
-        <item itemvalue="JUnit.CachingHandlerTest" />
         <item itemvalue="JUnit.CachingHandlerTest$CachingHandlerTest.TestCount" />
       </list>
     </recent_temporary>
@@ -169,7 +180,7 @@
       <workItem from="1717995432072" duration="21589000" />
       <workItem from="1718251466818" duration="70867000" />
       <workItem from="1718525164281" duration="93527000" />
-      <workItem from="1718864156426" duration="30710000" />
+      <workItem from="1718864156426" duration="34512000" />
     </task>
     <task id="LOCAL-00001" summary="one commit">
       <option name="closed" value="true" />
@@ -211,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719167094160</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="one commit">
+      <option name="closed" value="true" />
+      <created>1719212162245</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719212162245</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

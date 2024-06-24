@@ -3,6 +3,7 @@ package Cache.lesson3.mnogopot;
 
 
 
+import lombok.Setter;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Nested;
@@ -10,10 +11,11 @@ import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Nested;
 import javax.management.InvalidApplicationException;
 
 import static org.junit.jupiter.api.Assertions.*;
-class Fraction2 implements Fractionable{
+class Fraction2 implements CachingHandlerTest.Fractionable2 {
     int num;
     int denum;
     int count = 0;
+
 
     Fraction2(int num, int denum) {
         this.num = num;
@@ -26,7 +28,7 @@ class Fraction2 implements Fractionable{
     { double res=0;
         count++;
         res= (double) num /denum;
-        System.out.println("res : "+res);
+
         return (double) res;
     }
     @Cache(vltime = 0L)
@@ -34,7 +36,7 @@ class Fraction2 implements Fractionable{
     { double res=0;
         count++;
         res= num/denum;
-        System.out.println("res : "+res);
+
         return (double) res;
     }
 
@@ -71,23 +73,17 @@ class CachingHandlerTest {
         void TestCount() throws InvalidApplicationException, InterruptedException {
             Fraction2 fr = new Fraction2(1,2);
             Fractionable frs = Utils.cache(fr);
-
-
             frs.setDenum(4);
-
             frs.doubleValue();
-
             frs.doubleValue();
             frs.setDenum(5);
             frs.doubleValue();
-
             frs.doubleValue();
             frs.setDenum(4);
             frs.doubleValue();
             frs.doubleValue();
             frs.setNum(8);
             frs.doubleValue();
-
             frs.doubleValue();
             Thread.sleep(4000);
             frs.setDenum(5);
@@ -125,7 +121,45 @@ invoke double value
 
 
         }
+    public interface Fractionable2 extends Fractionable{
+        double doubleValue2();
 
 
+    }
+    @Test
+    void TestCount_0L() throws InvalidApplicationException, InterruptedException {
+        Fraction2 fr = new Fraction2(1,2);
+        Fractionable2 frs = Utils.cache(fr);
+        frs.setDenum(4);
+        frs.doubleValue2();
+        frs.doubleValue2();
+        frs.setDenum(5);
+        frs.doubleValue2();
+        frs.doubleValue2();
+        frs.setDenum(4);
+        frs.doubleValue2();
+        frs.doubleValue2();
+        frs.setNum(8);
+        frs.doubleValue2();
+        frs.doubleValue2();
+        Thread.sleep(4000);
+        frs.setDenum(5);
+        frs.doubleValue2();
+        frs.doubleValue2();
+        frs.setDenum(4);
+        frs.setNum(8);
+        Thread.sleep(4000);
+        frs.doubleValue2();
+        frs.doubleValue2();
+        assertEquals(fr.getCount(),4);
+
+/* смотрим сколько раз он обращался к doubleValue()
+
+* */
+
+
+
+
+    }
 
 }
