@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef337018-84b0-4272-b938-9d3703d46380" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/Start.java" afterDir="false" />
+    <list default="true" id="ef337018-84b0-4272-b938-9d3703d46380" name="Changes" comment="one commit">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Cache/lesson3/mnogopot/CachingHandlerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/CachingHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/CachingHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/ClearCache.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/Leadable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Cache/lesson3/mnogopot/Start.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,15 +23,25 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2hfqLuR8fz0cTXrRf14X0CgKvV1" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -38,18 +50,106 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Start.executor": "Run",
+    "JUnit.CachingHandlerTest$CachingHandlerTest.TestCount.executor": "Run",
+    "JUnit.CachingHandlerTest.TestCount.executor": "Run",
+    "JUnit.CachingHandlerTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "git-widget-placeholder": "Lesson3__cache",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alasemenov/IdeaProjects/Lessons/src/test/java/Lesons/lesson2/CachingHandlerTest.java",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/alasemenov/IdeaProjects/Lesson3/src/main/java/org/example/Main.java",
+    "settings.editor.selected.configurable": "http.proxy",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alasemenov\IdeaProjects\Lesson3\src\main\java\Cache\lesson3\mnogopot" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Cache.lesson3.mnogopot" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Cache.lesson3.mnogopot" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Start">
+    <configuration name="Start" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Cache.lesson3.mnogopot.Start" />
+      <module name="Lesson3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Cache.lesson3.mnogopot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CachingHandlerTest$CachingHandlerTest.TestCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lesson3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CachingHandlerTest$CachingHandlerTest" />
+      <option name="METHOD_NAME" value="TestCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CachingHandlerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lesson3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Cache.lesson3.mnogopot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Cache.lesson3.mnogopot" />
+      <option name="MAIN_CLASS_NAME" value="Cache.lesson3.mnogopot.CachingHandlerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CachingHandlerTest.TestCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lesson3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Cache.lesson3.mnogopot.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Cache.lesson3.mnogopot" />
+      <option name="MAIN_CLASS_NAME" value="Cache.lesson3.mnogopot.CachingHandlerTest" />
+      <option name="METHOD_NAME" value="TestCount" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Start" />
+        <item itemvalue="JUnit.CachingHandlerTest.TestCount" />
+        <item itemvalue="JUnit.CachingHandlerTest" />
+        <item itemvalue="JUnit.CachingHandlerTest$CachingHandlerTest.TestCount" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,8 +166,52 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1717995430819</updated>
-      <workItem from="1717995432072" duration="1361000" />
+      <workItem from="1717995432072" duration="21589000" />
+      <workItem from="1718251466818" duration="70867000" />
+      <workItem from="1718525164281" duration="93527000" />
+      <workItem from="1718864156426" duration="30710000" />
     </task>
+    <task id="LOCAL-00001" summary="one commit">
+      <option name="closed" value="true" />
+      <created>1717997067650</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717997067650</updated>
+    </task>
+    <task id="LOCAL-00002" summary="one commit">
+      <option name="closed" value="true" />
+      <created>1717997849372</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717997849372</updated>
+    </task>
+    <task id="LOCAL-00003" summary="one commit">
+      <option name="closed" value="true" />
+      <created>1718864249726</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718864249726</updated>
+    </task>
+    <task id="LOCAL-00004" summary="one commit">
+      <option name="closed" value="true" />
+      <created>1718864620537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718864620537</updated>
+    </task>
+    <task id="LOCAL-00005" summary="one commit">
+      <option name="closed" value="true" />
+      <created>1719167094160</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719167094160</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,7 +228,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="Lesson3_cache" />
                       </list>
                     </value>
                   </entry>
@@ -96,6 +240,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="one commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="one commit" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -104,7 +252,37 @@
           <line>13</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoSuchMethodException" package="java.lang" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.util.ConcurrentModificationException" package="java.util" />
+          <option name="timeStamp" value="5" />
+        </breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception" />
+        <breakpoint enabled="true" type="java-exception" />
+      </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="((java.util.concurrent.ConcurrentHashMap.MapEntry)((java.util.concurrent.ConcurrentHashMap)((StateCH)((CachingHandler)this).stateCh).methodMap).entrySet().toArray()[0]).getKey()" custom="Cache.lesson3.mnogopot.StateCH,java.util.concurrent.ConcurrentHashMap,java.util.concurrent.ConcurrentHashMap.MapEntry,Cache.lesson3.mnogopot.CachingHandler" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Lesson3$Start.ic" NAME="Start Coverage Results" MODIFIED="1719200551977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>Cache.lesson3.mnogopot.*</FILTER>
+    </SUITE>
   </component>
 </project>

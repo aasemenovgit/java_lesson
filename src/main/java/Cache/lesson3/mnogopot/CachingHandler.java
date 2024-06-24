@@ -31,14 +31,14 @@ public class CachingHandler<T> implements InvocationHandler {
 
         if (m.isAnnotationPresent(Cache.class))
         {
-            Ress ress = mapRes.get(m); // поменять ресс на хаш
+            Ress ress = mapRes.get(m);
            long ttimes = m.getDeclaredAnnotation(Cache.class).vltime();
 
             if (ress != null) {
                 ress.tTime = System.currentTimeMillis() + ttimes;
                 if (ttimes == 0) ress.tTime = 0L;
                 mapRes.put(m, ress);
-                //System.out.println(mapRes);
+
                 return (T) ress.val;
             }
 
@@ -58,8 +58,9 @@ public class CachingHandler<T> implements InvocationHandler {
             cacheMap.put(stateCh, mapRes);
         }
 
-        if(m.isAnnotationPresent(Mutator .class)){
-            CacheClear myThread = new CacheClear();
+
+        if(m.isAnnotationPresent(Mutator .class) || cacheMap.size()%5 ==0 ){
+           CacheClear myThread = new CacheClear();
             myThread.start();
 
         }
