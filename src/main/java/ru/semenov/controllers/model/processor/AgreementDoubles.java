@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 import ru.semenov.controllers.model.CorpSettlInstanceBody;
 import ru.semenov.controllers.model.InstanceArrangement;
-import ru.semenov.repo.AgreementRepo;
+import ru.semenov.dt.repo.AgreementRepo;
 
 
 import java.util.ArrayList;

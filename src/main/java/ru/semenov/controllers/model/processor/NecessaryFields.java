@@ -10,17 +10,22 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.UnaryOperator;
 
+
+
 @Component("necessfields")
 public class NecessaryFields implements UnaryOperator<Object> {
     @Override
     public Object apply(Object corpSettlMsg) {
-//        System.out.println("Step super: " + this.getClass().getSimpleName() + " > " + corpSettlMsg.getClass().getSimpleName());
+        System.out.println("Шаг: " + this.getClass().getSimpleName() + " > " + corpSettlMsg.getClass().getSimpleName());
 
         List<String> emptyFields = emptyMarkedFields(corpSettlMsg);
-
-        if (!emptyFields.isEmpty())
+       // System.out.println("emptyFields.isEmpty():"+emptyFields.toString());
+        if (!emptyFields.isEmpty()) {
+            System.out.println("Имя обязательного параметра:"+emptyFields.toString().replace(",", ";"));
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST
-                    , "Имя обязательного параметра " + emptyFields.toString().replace(",", ";") + " не заполнено.");
+                    , "!Имя обязательного параметра " + emptyFields.toString().replace(",", ";") + " не заполнено.");
+        }
+
         return corpSettlMsg;
     }
 
@@ -50,6 +55,7 @@ public class NecessaryFields implements UnaryOperator<Object> {
                 }
             }
         }
+        System.out.println("res:"+res.toString());
         return res;
     }
 }

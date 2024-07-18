@@ -8,7 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 import ru.semenov.controllers.model.CorpSettlAccountBody;
-import ru.semenov.repo.Tpp_product_registerRepo;
+import ru.semenov.dt.repo.Tpp_product_registerRepo;
 
 
 import java.util.List;
@@ -24,7 +24,6 @@ public class ProdRegDoublesAcc implements UnaryOperator<CorpSettlAccountBody> {
 
     @Override
     public CorpSettlAccountBody apply(CorpSettlAccountBody corpSettlAccountBody) {
-//        System.out.println("Step 2: " + this.getClass().getSimpleName());
 
         List<String[]> productRegisterParams = productRegisterRepo.findByParam(corpSettlAccountBody.getInstanceId());
 

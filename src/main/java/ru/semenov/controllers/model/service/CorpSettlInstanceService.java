@@ -7,8 +7,8 @@ import org.springframework.stereotype.Service;
 import ru.semenov.controllers.model.*;
 
 import ru.semenov.controllers.model.converter.CorpSettlInstanceBodyMapper;
-import ru.semenov.repo.AgreementRepo;
-import ru.semenov.repo.Tpp_product_registerRepo;
+import ru.semenov.dt.repo.AgreementRepo;
+import ru.semenov.dt.repo.Tpp_product_registerRepo;
 
 
 import java.util.List;
@@ -33,7 +33,7 @@ public class CorpSettlInstanceService implements CorpSettlInstanceServiceable{
     AgreementRepo agreementRepo;
 
     public ResponceInstMsg process(CorpSettlInstanceBodyDto instanceMsgIn) {
-//        System.out.println("Instance Service : " + this.getClass().getSimpleName());
+        System.out.println("Instance Service : " + this.getClass().getSimpleName());
 
         instanceBody = instanceBodyMapper.dtoToModel(instanceMsgIn);
 

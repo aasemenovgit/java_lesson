@@ -23,7 +23,7 @@ public class CorpSettlAccountService implements CorpSettlAccountServiceable {
     public ResponceAccMsg process(CorpSettlAccountBodyDto accountMsgIn) {
         System.out.println("ResponceAccMsg"+this.getClass().getName());
         accountBody = accountBodyMapper.dtoToModel(accountMsgIn);
-
+        System.out.println("accountBody"+accountBody.toString());
         operators.stream().forEach(x -> x.apply(accountBody));
         return new ResponceAccMsg(accountBody.getProductRegister().getId());
     }

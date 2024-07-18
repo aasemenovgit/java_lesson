@@ -6,10 +6,10 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import ru.semenov.controllers.model.CorpSettlInstanceBody;
 import ru.semenov.controllers.model.InstanceArrangement;
-import ru.semenov.entity.Agreement;
-import ru.semenov.entity.Tpp_product;
-import ru.semenov.repo.AgreementRepo;
-import ru.semenov.repo.Tpp_productRepo;
+import ru.semenov.dt.entity.Agreement;
+import ru.semenov.dt.entity.Tpp_product;
+import ru.semenov.dt.repo.AgreementRepo;
+import ru.semenov.dt.repo.Tpp_productRepo;
 
 
 import java.util.function.UnaryOperator;

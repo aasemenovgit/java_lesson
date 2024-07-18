@@ -1,4 +1,3 @@
-#FROM eclipse-temurin:17-jre-alpine
 FROM openjdk:17
 RUN mkdir /app
 RUN rm -f /app/*.jar

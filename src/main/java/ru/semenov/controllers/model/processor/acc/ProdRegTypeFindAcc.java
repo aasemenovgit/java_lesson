@@ -8,9 +8,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 
-import ru.semenov.entity.Tpp_ref_product_register_type;
+import ru.semenov.dt.entity.Tpp_ref_product_register_type;
 import ru.semenov.controllers.model.CorpSettlAccountBody;
-import ru.semenov.repo.Tpp_ref_product_register_typeRepo;
+import ru.semenov.dt.repo.Tpp_ref_product_register_typeRepo;
 
 import java.util.function.UnaryOperator;
 
@@ -24,8 +24,7 @@ public class ProdRegTypeFindAcc implements UnaryOperator<CorpSettlAccountBody> {
 
     @Override
     public CorpSettlAccountBody apply(CorpSettlAccountBody corpSettlAccountBody) {
-//        System.out.println("Step 3 " + this.getClass().getSimpleName());
-        Tpp_ref_product_register_type registerType = registerTypeRepo.findFirstByValue(corpSettlAccountBody.getRegistryTypeCode());
+      Tpp_ref_product_register_type registerType = registerTypeRepo.findFirstByValue(corpSettlAccountBody.getRegistryTypeCode());
         if (registerType == null)
             throw new ResponseStatusException(HttpStatus.NOT_FOUND
                     , "Код Продукта " + corpSettlAccountBody.getRegistryTypeCode()

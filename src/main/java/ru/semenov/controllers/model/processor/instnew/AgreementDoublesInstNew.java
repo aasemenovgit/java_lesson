@@ -20,7 +20,6 @@ public class AgreementDoublesInstNew implements UnaryOperator<CorpSettlInstanceB
 
     @Override
     public CorpSettlInstanceBody apply(CorpSettlInstanceBody corpSettlInstanceBody) {
-//        System.out.println("Step 3: " + this.getClass().getSimpleName());
         return agreementDoubles.apply(corpSettlInstanceBody);
     }
 }

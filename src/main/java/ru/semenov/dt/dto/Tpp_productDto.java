@@ -1,4 +1,4 @@
-package ru.semenov.dto;
+package ru.semenov.dt.dto;
 
 import jakarta.validation.constraints.Size;
 

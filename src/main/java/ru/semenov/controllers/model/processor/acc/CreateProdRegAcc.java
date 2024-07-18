@@ -7,14 +7,14 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
-import ru.semenov.entity.Tpp_product_register;
-import ru.semenov.entity.Tpp_ref_product_register_type;
+import ru.semenov.dt.entity.Tpp_product_register;
+import ru.semenov.dt.entity.Tpp_ref_product_register_type;
 import ru.semenov.controllers.model.CorpSettlAccountBody;
 import ru.semenov.controllers.model.State;
-import ru.semenov.repo.Account_poolRepo;
-import ru.semenov.repo.AccountRepo;
-import ru.semenov.repo.Tpp_product_registerRepo;
-import ru.semenov.repo.Tpp_ref_product_register_typeRepo;
+import ru.semenov.dt.repo.Account_poolRepo;
+import ru.semenov.dt.repo.AccountRepo;
+import ru.semenov.dt.repo.Tpp_product_registerRepo;
+import ru.semenov.dt.repo.Tpp_ref_product_register_typeRepo;
 
 import java.util.List;
 import java.util.function.UnaryOperator;
@@ -35,7 +35,6 @@ public class CreateProdRegAcc implements UnaryOperator<CorpSettlAccountBody> {
 
     @Override
     public CorpSettlAccountBody apply(CorpSettlAccountBody corpSettlAccountBody) {
-//        System.out.println("Step 4: " + this.getClass().getSimpleName());
 
         List<Integer> accountPools = accountPoolRepo.findByParam(
                 corpSettlAccountBody.getBranchCode()

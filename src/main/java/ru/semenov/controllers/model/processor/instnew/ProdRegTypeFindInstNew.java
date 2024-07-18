@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 import ru.semenov.controllers.model.CorpSettlInstanceBody;
-import ru.semenov.repo.Tpp_ref_product_register_typeRepo;
+import ru.semenov.dt.repo.Tpp_ref_product_register_typeRepo;
 
 import java.util.List;
 import java.util.function.UnaryOperator;
@@ -22,7 +22,6 @@ public class ProdRegTypeFindInstNew implements UnaryOperator<CorpSettlInstanceBo
 
     @Override
     public CorpSettlInstanceBody apply(CorpSettlInstanceBody corpSettlInstanceBody) {
-//        System.out.println("Step 4: " + this.getClass().getSimpleName());
 
         List<String> res = registerTypeRepo.findByParam(corpSettlInstanceBody.getProductCode(), "Клиентский");
         corpSettlInstanceBody.setExistRegisterTypes(res);

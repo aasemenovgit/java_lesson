@@ -20,7 +20,6 @@ public class NecessaryFieldsAcc implements UnaryOperator<CorpSettlAccountBody> {
 
     @Override
     public CorpSettlAccountBody apply(CorpSettlAccountBody corpSettlAccountBody) {
-//        System.out.println("Step 1: " + this.getClass().getSimpleName());
-        return (CorpSettlAccountBody) necessaryFields.apply(corpSettlAccountBody);
+      return (CorpSettlAccountBody) necessaryFields.apply(corpSettlAccountBody);
     }
 }

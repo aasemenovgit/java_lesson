@@ -4,9 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
-import ru.semenov.entity.Tpp_product;
+import ru.semenov.dt.entity.Tpp_product;
 import ru.semenov.controllers.model.CorpSettlInstanceBody;
-import ru.semenov.repo.Tpp_productRepo;
+import ru.semenov.dt.repo.Tpp_productRepo;
 
 
 import java.util.function.UnaryOperator;
@@ -20,7 +20,7 @@ public class ProdCreateInstNew implements UnaryOperator<CorpSettlInstanceBody> {
 
     @Override
     public CorpSettlInstanceBody apply(CorpSettlInstanceBody corpSettlInstanceBody) {
-//        System.out.println("Step 5: " + this.getClass().getSimpleName());
+
 
         Tpp_product product = new Tpp_product(
                 corpSettlInstanceBody.getProductType()

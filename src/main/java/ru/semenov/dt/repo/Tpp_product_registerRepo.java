@@ -1,8 +1,8 @@
-package ru.semenov.repo;
+package ru.semenov.dt.repo;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import ru.semenov.entity.Tpp_product_register;
+import ru.semenov.dt.entity.Tpp_product_register;
 
 
 import java.util.List;

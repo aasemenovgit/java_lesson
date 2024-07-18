@@ -1,10 +1,10 @@
-package ru.semenov.repo;
+package ru.semenov.dt.repo;
 
 import jakarta.transaction.Transactional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
-import ru.semenov.entity.Account;
+import ru.semenov.dt.entity.Account;
 
 
 import java.util.List;

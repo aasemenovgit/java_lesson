@@ -1,7 +1,7 @@
-package ru.semenov.dto;
+package ru.semenov.dt.dto;
 
 import jakarta.validation.constraints.Size;
-import ru.semenov.entity.Tpp_ref_product_register_type;
+import ru.semenov.dt.entity.Tpp_ref_product_register_type;
 
 
 public record Tpp_product_registerDto(

@@ -7,7 +7,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ResponseStatusException;
 import ru.semenov.controllers.model.CorpSettlInstanceBody;
-import ru.semenov.repo.Tpp_productRepo;
+import ru.semenov.dt.repo.Tpp_productRepo;
 
 
 import java.util.List;
@@ -23,7 +23,6 @@ public class ProdDoublesInstNew implements UnaryOperator<CorpSettlInstanceBody> 
 
     @Override
     public CorpSettlInstanceBody apply(CorpSettlInstanceBody corpSettlInstanceBody) {
-//        System.out.println("Step 2: " + this.getClass().getSimpleName());
         List<String> products = productRepo.findByParam(corpSettlInstanceBody.getContractNumber());
 
         if (!products.isEmpty()) {

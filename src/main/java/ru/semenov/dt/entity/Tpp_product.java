@@ -1,4 +1,4 @@
-package ru.semenov.entity;
+package ru.semenov.dt.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;

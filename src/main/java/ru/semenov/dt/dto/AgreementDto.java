@@ -1,7 +1,7 @@
-package ru.semenov.dto;
+package ru.semenov.dt.dto;
 
 import jakarta.validation.constraints.Size;
-import ru.semenov.entity.Tpp_product;
+import ru.semenov.dt.entity.Tpp_product;
 
 
 import java.sql.Timestamp;

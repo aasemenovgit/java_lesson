@@ -19,7 +19,7 @@ public class NecessaryFieldsInstNew implements UnaryOperator<CorpSettlInstanceBo
 
     @Override
     public CorpSettlInstanceBody apply(CorpSettlInstanceBody corpSettlInstanceBody) {
-//        System.out.println("Step 1: " + this.getClass().getSimpleName());
+
 
         return (CorpSettlInstanceBody) necessaryFields.apply(corpSettlInstanceBody);
     }

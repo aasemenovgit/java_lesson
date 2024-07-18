@@ -4,8 +4,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import ru.semenov.controllers.model.processor.RequiredParameter;
-import ru.semenov.entity.Tpp_product_register;
-import ru.semenov.entity.Tpp_ref_product_register_type;
+import ru.semenov.dt.entity.Tpp_product_register;
+import ru.semenov.dt.entity.Tpp_ref_product_register_type;
 
 @NoArgsConstructor
 @Getter
